@@ -1,0 +1,49 @@
+.heroBanner {
+  position: relative;
+  overflow: hidden;
+  padding: 7rem 0;
+  color: white;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(43, 195, 255, 0.35), transparent 30%),
+    linear-gradient(135deg, #071b33 0%, #0b3d68 58%, #0c6e8f 100%);
+}
+
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.14;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px);
+  background-size: 44px 44px;
+  pointer-events: none;
+}
+
+.heroBanner > div { position: relative; z-index: 1; }
+.eyebrow, .sectionLabel { font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; }
+.eyebrow { color: #8ee7ff; }
+.heroTitle { max-width: 900px; margin: 1rem 0; font-size: clamp(2.7rem, 6vw, 5rem); line-height: 1.02; }
+.heroSubtitle { max-width: 760px; font-size: 1.25rem; line-height: 1.7; color: #e8f7ff; }
+.buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+.introSection, .focusSection, .safetySection { padding: 5rem 0; }
+.introGrid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 4rem; align-items: center; }
+.sectionLabel { color: var(--ifm-color-primary); }
+.circuitPanel { min-height: 320px; border-radius: 24px; position: relative; overflow: hidden; background: linear-gradient(145deg, #08233f, #0f5271); box-shadow: 0 24px 60px rgba(2, 20, 40, 0.22); }
+.circuitLine { position: absolute; inset: 50% 12%; height: 4px; background: #7de6ff; box-shadow: 0 -72px 0 #7de6ff, 0 72px 0 #7de6ff; }
+.circuitNode { position: relative; display: inline-grid; place-items: center; margin: 56px 8px 0 28px; width: 62px; height: 62px; border: 3px solid #ffd166; border-radius: 50%; color: white; font-size: 1.5rem; font-weight: 800; background: #0b3858; }
+.formula { position: absolute; bottom: 38px; right: 34px; color: white; font-size: 1.7rem; font-weight: 800; }
+.focusSection { background: var(--ifm-background-surface-color); }
+.sectionHeading { max-width: 720px; margin-bottom: 2rem; }
+.featureGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.featureCard { padding: 2rem; background: var(--ifm-background-color); border: 1px solid var(--ifm-color-emphasis-200); border-radius: 18px; box-shadow: 0 12px 30px rgba(2, 20, 40, 0.06); }
+.featureIcon { font-size: 2.2rem; margin-bottom: 1rem; }
+.safetyCard { display: flex; gap: 2rem; justify-content: space-between; align-items: center; padding: 2.5rem; border-radius: 22px; color: white; background: linear-gradient(135deg, #8a4b00, #d97706); }
+.safetyCard h2 { color: white; }
+.safetyCard p { max-width: 850px; margin-bottom: 0; }
+
+@media (max-width: 996px) {
+  .heroBanner { padding: 5rem 0; }
+  .introGrid, .featureGrid { grid-template-columns: 1fr; }
+  .safetyCard { align-items: flex-start; flex-direction: column; }
+}
