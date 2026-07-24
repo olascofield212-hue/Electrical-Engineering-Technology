@@ -8,10 +8,9 @@ const config = {
   tagline: 'Practical knowledge for the systems that power modern life',
   favicon: 'img/favicon.svg',
 
-  // Replace these placeholder values with your own GitHub username and repository name.
-  url: 'https://YOUR-GITHUB-USERNAME.github.io',
+  url: 'https://olascofield212-hue.github.io',
   baseUrl: '/electrical-engineering-technology-hub/',
-  organizationName: 'YOUR-GITHUB-USERNAME',
+  organizationName: 'olascofield212-hue',
   projectName: 'electrical-engineering-technology-hub',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
