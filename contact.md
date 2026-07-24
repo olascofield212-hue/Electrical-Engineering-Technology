@@ -12,7 +12,7 @@ description: Contact information, professional associations, safety resources, a
 
 **Oladipupo Ola**  
 Electrical Engineering Technology graduate and technical professional  
-Email: [your-email@example.com](mailto:your-email@example.com)
+Email: olaoladipupo@yahoo.ca
 
 > Replace the placeholder email address before publishing the site.
 
@@ -55,9 +55,3 @@ The information on this site is general and educational. It does not replace for
 
 :::
 
-## Additional resource links
-
-- [Docusaurus documentation](https://docusaurus.io/docs)
-- [GitHub documentation](https://docs.github.com/)
-- [Node.js](https://nodejs.org/)
-- [Yarn](https://yarnpkg.com/)
